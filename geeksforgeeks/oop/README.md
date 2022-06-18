@@ -55,24 +55,21 @@ The method is useful to do any initialization you want to do with your object.
 <pre>
 <code>
 class Dog:
-
-    # class attribute
+	class attribute
     attr1 = "mammal"
- 
-    # Instance attribute
+    Instance attribute
     def __init__(self, name):
         self.name = name
- 
-# Driver code
-# Object instantiation
+
+Object instantiation
 Rodger = Dog("Rodger")
-Tommy = Dog("Tommy")
+Tommy = Dog("Tommy"
  
-# Accessing class attributes
+Accessing class attributes
 print("Rodger is a {}".format(Rodger.__class__.attr1))
 print("Tommy is also a {}".format(Tommy.__class__.attr1))
  
-# Accessing instance attributes
+Accessing instance attributes
 print("My name is {}".format(Rodger.name))
 print("My name is {}".format(Tommy.name))
 </code>
