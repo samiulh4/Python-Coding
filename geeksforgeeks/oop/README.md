@@ -46,3 +46,34 @@ We do not give a value for this parameter when we call the method, Python provid
 </p>
 
 
+<h4>The __init__ method </h4>
+<p>
+The __init__ method is similar to constructors in C++ and Java. 
+It is run as soon as an object of a class is instantiated. 
+The method is useful to do any initialization you want to do with your object. 
+</p>
+<pre>
+<code>
+class Dog:
+
+    # class attribute
+    attr1 = "mammal"
+ 
+    # Instance attribute
+    def __init__(self, name):
+        self.name = name
+ 
+# Driver code
+# Object instantiation
+Rodger = Dog("Rodger")
+Tommy = Dog("Tommy")
+ 
+# Accessing class attributes
+print("Rodger is a {}".format(Rodger.__class__.attr1))
+print("Tommy is also a {}".format(Tommy.__class__.attr1))
+ 
+# Accessing instance attributes
+print("My name is {}".format(Rodger.name))
+print("My name is {}".format(Tommy.name))
+</code>
+</pre>
