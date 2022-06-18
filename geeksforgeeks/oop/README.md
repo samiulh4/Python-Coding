@@ -1,7 +1,5 @@
 # <a href="https://www.geeksforgeeks.org/python-oops-concepts/#:~:text=In%20Python%2C%20object%2Doriented%20Programming,in%20the%20programming.">Python OOP - geeksforgeeks.org</a>
-
-
-Main Concepts of Object Oriented Programming (OOP)
+<h4>Main Concepts of Object Oriented Programming (OOP)</h4>
 <ul>
 	<li>Class</li>
 	<li>Objects</li>
@@ -17,7 +15,6 @@ A class is a collection of objects.
 A class contains the blueprints or the prototype from which the objects are being created. 
 It is a logical entity that contains some attributes and methods. 
 </p>
-
 <pre>
 <code>
 class Dogs:
@@ -34,11 +31,18 @@ More specifically, any single integer or any single string is an object.
 The number 12 is an object, the string “Hello, world” is an object, a list is an object that can hold other objects, and so on. 
 You’ve been using objects all along and may not even realize it.
 </p>
-
 <pre>
 <code>
-	obj = Dog()
+obj = Dog()
 </code>
 </pre>
+
+<h4>The self</h4>
+<p>
+1. Class methods must have an extra first parameter in the method definition.
+We do not give a value for this parameter when we call the method, Python provides it.<br/>
+2. If we have a method that takes no arguments, then we still have to have one argument.<br/>
+3. This is similar to this pointer in C++ and this reference in Java.
+</p>
 
 
